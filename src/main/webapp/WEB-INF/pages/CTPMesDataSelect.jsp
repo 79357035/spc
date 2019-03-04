@@ -11,7 +11,6 @@
 	<script type="text/javascript" src="../resources/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="../resources/My97DatePicker/WdatePicker.js"></script>
 	<script type="text/javascript" src="../resources/JS/AjaxCheckSession.js"></script>
-
 </head>
 <body>
 	<div class="top">
@@ -47,27 +46,21 @@
 				</div>
 			</div>
 			<div class="form-box">
-				<label for="FAI-WS"  class="col-sm-1 control-label">FAI/工站:
+				<label for="check-pro" class="col-sm-1 control-label">檢驗項目:
 				</label>
 				<div class="col-sm-2">
-					<input type="text" id="FAI-WS" name="FAI-WS" class="form-control"/>
-				</div>	
-				<label for="dpick1"  class="col-sm-1 control-label">起始時間:
-				</label>
-				<div class="col-sm-2">
-					<input id="dpick1" name="start" style="height:34px;" class="Wdate form-control" type="text" onClick="WdatePicker({dateFmt:'yyyy/MM/dd',maxDate:'#F{$dp.$D(\'dpick2\')}'})" autocomplete="off">
+					<select id="check-pro" name="check-pro" class="form-control">
+						<option>禁止选择</option>
+					</select>
 				</div>
-				<label for="dpick2" class="col-sm-1 control-label">結束時間:
+				<label for="dpick1"  class="col-sm-1 control-label">搜尋日期:
 				</label>
 				<div class="col-sm-2">
-					<input id="dpick2" name="end" style="height:34px;" class="Wdate form-control" type="text" onClick="WdatePicker({dateFmt:'yyyy/MM/dd',minDate:'#F{$dp.$D(\'dpick1\')}'})" autocomplete="off">
+					<input id="dpick1" name="search-time" style="height:34px;" class="Wdate form-control" type="text" onClick="WdatePicker({maxDate:'%y-%M-{%d}'})" autocomplete="off">
 				</div>
-				<button type="button" class="btn btn-primary btn-main">提交</button>
+				<button type="button" class="btn btn-primary btn-main">查詢</button>
 				<button type="button" class="btn btn-primary btn-main">輸出</button>
-			
 			</div>
-			
-				
 			<!-- <button type="submit" class="btn btn-primary btn-left">提交</button>
 			<button type="submit" class="btn btn-primary btn-left">輸出</button> -->
 			<!-- <button type="button" class="btn btn-primary">点击</button> -->
