@@ -9,7 +9,6 @@
 	<link rel="stylesheet" type="text/css" href="../resources/css/SubPage.css">
 	<script type="text/javascript" src="../resources/jq/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="../resources/JS/AjaxCheckSession.js"></script>
-	<script type="text/javascript" src="../resources/JS/operate/SPFileSelect.js"></script>
 </head>
 <body>
 	<div class="top">
@@ -23,11 +22,11 @@
 				<div class="file-main">
 					<input id="partNo-bd" name="partNo-bd" class="form-control" type="text">
 				</div>	
-				<button type="button" class="btn btn-primary file-only" id="SPC_Select">搜尋</button>	
+				<button type="button" class="btn btn-primary file-only">搜尋</button>	
 			</div>
 		</form>
 	</div>
-	<div class="bottom" style="overflow: auto;">
+	<div class="bottom">
 	</div>
 </body>
 </html>
